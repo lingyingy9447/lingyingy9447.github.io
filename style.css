@@ -42,6 +42,9 @@ a {
 .bg-2 {
     background: url("../img/bg4.jpg")
 }
+.bg-6 {
+    background-color: #dec64b ;
+}
 
 .card {
     color: black;

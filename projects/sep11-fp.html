@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title class="owner-name">#</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand owner-name" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="github" target="_blank">Github</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#projects">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- First Container -->
+    <div class="container-fluid bg-1">
+        <div class="container">
+
+            <h1 class="margin text-center">Platformer Game</h1>
+            <h2>Context/Content</h2>
+            <p>The "Freedom Project" for SEP11 is all about applying what students had learned throughout the sep11 course and what they learn from their tool to create anything they want that uses javascript. The purpose of this blog is to show the process of how the students made their freedom project. It shows how the students process everything in detail and the challenges they faced throughout the year.</p>
+            <p>For my project, I am making a platformer game for which the user has to collect coins and escape from the enemies to go to the next level. This blog will walk through my process of independently studying KaboomJs to make my platformer game. It will show how I used what I learned from class and what I learned from kaboom js, a javascript library, to make my game.</p>
+            <h2>Reflection</h2>
+            <p> One of my biggest challenges is making the “toto” (enemies) move back and forth. Initially, the toto was flowing in the air which looked kind of weird. We try various attempts to make the toto move back and forth between two certain positions. We tried using `.pos` to control the position of the tot but it only worked for the first toto. We couldn’t get the position of every single toto so we ended up making the remaining toto stay in one position. Another challenge I faced was looping the levels. The code we have, `level: (level + 1)’ , works for going from level one to level three but it doesn’t when you want to go back to level one because our game map is array inside of array so the index will start with 0. If we are currently at level 3, the index will be 2 and 2 plus one will give us three but we do not have a level with an index of 3. After using a concrete example, we realized that adding ` % maps.length` will work because 2 mod 2 will give us a remainder of zero which brings us back to level 1. </p>
+
+            <p> One of my takeaways from doing this project is that using concrete examples will help you process the code better. Additionally, using console.log will help us because it will show you where the problem occurs in your code. It will be easier for us to debug our code. </p>
+
+            <p> My next step for this project is to add an instruction scene because it will make it easier for the player to understand what they need to do. Additionally, I want to add audio to the game so it's more entertaining. </p>
+
+            <a href="https://chanryc9471.github.io/sep11-freedom-project-kaboom/">Link to my project</a><br>
+            <a href="https://docs.google.com/presentation/d/18cxWqP1cokwUJIaiEXNiO7qoK497ZI2w6uPl_6NhVuo/edit#slide=id.g24390b4a273_0_10135">Link to my presentation</a><br>
+
+            <!--EXAMPLE OF PREVIEW LINK-->
+            <!--<a href="http://yourUserName.github.io/yourRepoName">Preview</a><br>-->
+            <!--EXAMPLE OF GITHUB LINK-->
+            <!--<a href="http://github.com/yourUserName/yourRepoName">Github</a><br>-->
+
+            <img src="../img/sep11.png" class="img-fluid project-img">
+
+
+            <div class="row">
+
+                <!--
+                <div class="col-sm-6">
+                    Use this to...
+                </div>
+                <div class="col-sm-6">
+                    ...make two columns
+                </div>
+                -->
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-4 text-center">
+        <a href="#" target="_blank" id="fork"><img src="../img/fork.png"></a><br>
+        <a href="https://hstatsep.github.io" target="_blank"><img src="https://hstatsep.github.io/img/hstatsep-logo-small.png" id="sep"></a>
+    </footer>
+
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
+
